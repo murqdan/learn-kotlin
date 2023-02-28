@@ -13,7 +13,7 @@ fun main() {
     println(intersect)
 
     val mutableSet = mutableSetOf(1, 2, 4, 2, 1, 5)
-    mutableSet[2] = 6 // error
+    //mutableSet[2] = 6 // error
     mutableSet.add(6)
     mutableSet.remove(1)
 }
