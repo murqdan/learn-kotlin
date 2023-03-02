@@ -1,9 +1,10 @@
-fun main() {
-    fun factorial(n: Int): Int {
+tailrec fun main() {
+    fun factorial(n: Int, result: Int = 1): Int {
+        val newResult = n * result
         return if (n == 1) {
-            n
+            newResult
         } else {
-            n * factorial(n - 1)
+            factorial(n - 1, newResult)
         }
     }
 
