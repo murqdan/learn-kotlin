@@ -8,6 +8,10 @@ interface List<out E> : Collection<E> {
 }
 */
 
+interface Comparable<in T> {
+    operator fun compareTo(other: T): Int
+}
+
 fun main() {
     val car = Car(200)
     val motorCycle = MotorCycle(100)
